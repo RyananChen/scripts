@@ -1,25 +1,17 @@
 B站跳过片头片尾脚本
 ===========
-[](#脚本链接)脚本链接
+[](#油猴脚本链接)油猴脚本链接
 -------------
-待填
+**自动版**:https://greasyfork.org/zh-CN/scripts/463515
+**手动版**:https://greasyfork.org/zh-CN/scripts/463516
+
+[](#项目地址)项目地址
+-------------
+https://github.com/RyananChen/scripts/tree/main/BiliBili-skip-IntroL-Outro-Tampermonkey
 
 [](#脚本原理)脚本原理
 -------------
-使用js中video.currentTime和video.duration的关系来判断时间
-
-[](#注意事项)注意事项
--------------
-固定片头片尾时长,适合看同一部番剧时使用,如果短时间看不同的番剧,容易时间跳多跳少.  
-这时建议用白名单和黑名单功能,复制几份代码出来生成不同脚本,给不同名字,给不同片头片尾时长.  
-一个油猴脚本对应一个番即可,设置一次之后都省力.
-```
-黑名单
-// @exclude      https://example.com/*
-白名单
-// @match        https://example.com/*
-星号*表示正则的匹配.
-```
+使用js中**video.currentTime**和**video.duration**的关系来判断时间
 
 [](#配置)配置
 -------------
@@ -35,9 +27,23 @@ var skip_OutroLength = 44; // 设置片尾长度，单位为秒
 [](#使用方法)使用方法
 -------------
 
-把脚本安装进油猴脚本内,**填好片头片尾的秒数**即可  
-自动版:自动执行,两秒钟判断一次是否执行.  
-手动版:按下CTRL按键或者+=按键即可执行.  
+把脚本安装进**油猴脚本**内,**填好片头片尾的秒数**即可  
+**自动版**:自动执行,两秒钟判断一次是否执行.  
+**手动版**:按下CTRL按键或者+=按键即可执行.  
+
+[](#注意事项)注意事项
+-------------
+固定片头片尾时长,适合看同一部番剧时使用,如果短时间看不同的番剧,容易时间跳多跳少.  
+这时建议用白名单和黑名单功能,复制几份代码出来生成不同脚本,给不同名字,给不同片头片尾时长.  
+一个油猴脚本对应一个番即可,设置一次之后都省力.
+```
+黑名单
+// @exclude      https://example.com/*
+白名单
+// @match        https://example.com/*
+星号*表示正则的匹配.
+```
+
 
 [](#自动版脚本)自动版脚本
 ---------
@@ -45,11 +51,12 @@ var skip_OutroLength = 44; // 设置片尾长度，单位为秒
 ``` js
 // ==UserScript==
 // @name         B站哔哩哔哩bilibili跳过番剧片头片尾【自动版】
-// @description  bilibili B站自动跳过番剧片头片尾。可在代码第一行第二行修改片头和片尾时间。支持edge以及chrome。
+// @description  bilibili B站自动跳过番剧片头片尾。可在代码第一行第二行修改片头和片尾时间。支持edge以及chrome。项目地址https://github.com/RyananChen/scripts/tree/main/BiliBili-skip-IntroL-Outro-Tampermonkey
 // @namespace    http://tampermonkey.net/
 // @version      1.2
 // @author       RyananChen
 // @match        https://www.bilibili.com/bangumi/play/*
+// @license      BSD
 // @grant        none
 // ==/UserScript==
 /*
@@ -102,11 +109,13 @@ const skip_OutroLength = 44; // 设置片尾长度，单位为秒
 ``` js 
 // ==UserScript==
 // @name         B站哔哩哔哩bilibili跳过番剧片头片尾【手动版】
-// @description  bilibili B站一键跳过番剧片头按一下=+键或者ctrl后，先快进90秒skipTime，然后等待4秒waitTime，然后跳到1：30秒。这样可以在片头的时候跳过片头，也可以在片尾的时候跳到下一集。可在配置文件修改，目前不支持火狐浏览器
+// @description  在b站番剧页面，按下  =+键  或者  ctrl键  后，跳过片头曲或片尾曲。可在配置文件修改片头片尾时间。
+// @description  项目地址https://github.com/RyananChen/scripts/tree/main/BiliBili-skip-IntroL-Outro-Tampermonkey
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @author       RyananChen
 // @match        https://www.bilibili.com/bangumi/play/*
+// @license      BSD
 // @grant        none
 // ==/UserScript==
 /*
