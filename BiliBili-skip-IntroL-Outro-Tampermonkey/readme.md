@@ -2,7 +2,7 @@ B站跳过片头片尾脚本
 ===========
 [](#油猴脚本链接)油猴脚本链接
 -------------
-**自动版**:https://greasyfork.org/zh-CN/scripts/463515
+**自动版**:https://greasyfork.org/zh-CN/scripts/463515  
 **手动版**:https://greasyfork.org/zh-CN/scripts/463516
 
 [](#项目地址)项目地址
