@@ -64,8 +64,8 @@ var skip_OutroLength = 44; // 设置片尾长度，单位为秒
 //但这么做会导致看什么视频都跳过，不合适。
 //参考链接
 chatgpt
-https://greasyfork.org/zh-CN/scripts/443560-b%E7%AB%99%E4%B8%80%E9%94%AE%E8%B7%B3%E8%BF%87%E7%95%AA%E5%89%A7%E7%89%87%E5%A4%B4
-https://greasyfork.org/zh-CN/scripts/441461-b%E7%AB%99%E4%B8%80%E9%94%AE%E8%B7%B3%E8%BF%87%E7%95%AA%E5%89%A7%E7%89%87%E5%A4%B4-%E6%8C%89%E4%B8%80%E4%B8%8B%E4%B8%80%E5%88%86%E5%8D%8A-%E5%8F%AF%E5%9C%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BF%AE%E6%94%B9
+https://greasyfork.org/zh-CN/scripts/443560
+https://greasyfork.org/zh-CN/scripts/441461
 */
 
 const skip_IntroLength = 90; // 设置片头长度，单位为秒
@@ -109,8 +109,7 @@ const skip_OutroLength = 44; // 设置片尾长度，单位为秒
 ``` js 
 // ==UserScript==
 // @name         B站哔哩哔哩bilibili跳过番剧片头片尾【手动版】
-// @description  在b站番剧页面，按下  =+键  或者  ctrl键  后，跳过片头曲或片尾曲。可在配置文件修改片头片尾时间。
-// @description  项目地址https://github.com/RyananChen/scripts/tree/main/BiliBili-skip-IntroL-Outro-Tampermonkey
+// @description  在b站番剧页面，按下  =+键  或者  ctrl键  后，跳过片头曲或片尾曲。可在配置文件修改片头片尾时间。项目地址https://github.com/RyananChen/scripts/tree/main/BiliBili-skip-IntroL-Outro-Tampermonkey
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @author       RyananChen
@@ -123,8 +122,8 @@ const skip_OutroLength = 44; // 设置片尾长度，单位为秒
 //但这么做会导致看什么视频都跳过，不合适。
 //参考链接
 chatgpt
-https://greasyfork.org/zh-CN/scripts/443560-b%E7%AB%99%E4%B8%80%E9%94%AE%E8%B7%B3%E8%BF%87%E7%95%AA%E5%89%A7%E7%89%87%E5%A4%B4
-https://greasyfork.org/zh-CN/scripts/441461-b%E7%AB%99%E4%B8%80%E9%94%AE%E8%B7%B3%E8%BF%87%E7%95%AA%E5%89%A7%E7%89%87%E5%A4%B4-%E6%8C%89%E4%B8%80%E4%B8%8B%E4%B8%80%E5%88%86%E5%8D%8A-%E5%8F%AF%E5%9C%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BF%AE%E6%94%B9
+https://greasyfork.org/zh-CN/scripts/443560
+https://greasyfork.org/zh-CN/scripts/441461
 */
 var skip_IntroLength = 90; //片头曲时间||需要跳过的时间，请把这一项设置为你要跳过的片头时长。
 var skip_OutroLength = 44; // 设置片尾长度，单位为秒
