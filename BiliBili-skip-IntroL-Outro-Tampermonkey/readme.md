@@ -75,7 +75,7 @@ const skip_OutroLength = 44; // 设置片尾长度，单位为秒
 {
 	setInterval(() =>
 	{
-		const video = document.querySelector('video'); // 获取页面上的视频元素
+		const video = document.querySelector("#bilibili-player video"); // 获取页面上的视频元素
 		if (video && !isNaN(video.duration)) //如果获取到视频元素并且视频总长度为数字还是啥，没细看isnan。
 		{
 			const currentTime = video.currentTime; // 获取当前播放时间的时间戳
@@ -142,7 +142,7 @@ document.addEventListener('keyup', async function(e)
 {
 	if (e.keyCode === 187 || e.keyCode === 17)
 	{ //187代表“=+”的keycode值，17代表ctrl的keycode值。keycode值可在https://www.cnblogs.com/lxwphp/p/9548823.html查询
-		var video = document.querySelector('video');
+		var video = document.querySelector("#bilibili-player video");
 		const currentTime = video.currentTime; // 获取当前播放时间的时间戳
 		//如果当前播放时间在片头，就跳到片头曲结束。
 		if (currentTime < skip_IntroLength)
