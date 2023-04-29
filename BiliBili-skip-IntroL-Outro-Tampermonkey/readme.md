@@ -53,7 +53,7 @@ var skip_OutroLength = 44; // 设置片尾长度，单位为秒
 // @name         B站哔哩哔哩bilibili跳过番剧片头片尾【自动版】
 // @description  bilibili B站自动跳过番剧片头片尾。可在代码第一行第二行修改片头和片尾时间。支持edge以及chrome。项目地址https://github.com/RyananChen/scripts/tree/main/BiliBili-skip-IntroL-Outro-Tampermonkey
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @author       RyananChen
 // @match        https://www.bilibili.com/bangumi/play/*
 // @license      BSD
@@ -111,7 +111,7 @@ const skip_OutroLength = 44; // 设置片尾长度，单位为秒
 // @name         B站哔哩哔哩bilibili跳过番剧片头片尾【手动版】
 // @description  在b站番剧页面，按下  =+键  或者  ctrl键  后，跳过片头曲或片尾曲。可在配置文件修改片头片尾时间。项目地址https://github.com/RyananChen/scripts/tree/main/BiliBili-skip-IntroL-Outro-Tampermonkey
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.3
 // @author       RyananChen
 // @match        https://www.bilibili.com/bangumi/play/*
 // @license      BSD
